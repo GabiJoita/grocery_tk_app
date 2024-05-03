@@ -23,10 +23,6 @@ def add_product():
         messagebox.showerror(message='please, enter a product')
 
 
-def prod_categories():
-    categories = ['fruits', 'food', 'drinks']
-
-
 def total_price():
     """ now use indexing to take the price
         from our list and calculate the total sum
