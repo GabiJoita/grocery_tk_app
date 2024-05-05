@@ -35,6 +35,14 @@ def total_price():
     return total
 
 
+# def prod_categories():
+#     categories = {}
+#     for item in list_prod.get(0, tk.END):
+#         category = str(item.split()[-3])
+#         categories.append(category)
+#     return categories
+
+
 def show_total_price():
     """ open another window in your project
         to show the total price
@@ -46,6 +54,16 @@ def show_total_price():
     label = tk.Label(top, text='', textvariable=index, bg='#857EFF')
     label.pack()
     index.set(s_tot)
+
+
+# def show_categories():
+#     s_cat = prod_categories()
+#     top = tk.Toplevel()
+#     top.configure(bg='#857EFF')
+#     top.geometry('200x100')
+#     label = tk.Label(top, text='', textvariable=index, bg='#857EFF')
+#     label.pack()
+#     index.set(s_cat)
 
 
 def delete_product():
@@ -108,5 +126,9 @@ if __name__ == "__main__":
     total_button = cst.CTkButton(root, text='total price', corner_radius=32, width=15, height=30,
                                  command=show_total_price)
     total_button.grid(row=2, column=3)
+
+    # categories_button = cst.CTkButton(root, text='show categories', corner_radius=32, width=15, height=30,
+    #                                   command=show_categories)
+    # categories_button.grid(row=3, column=3)
 
     root.mainloop()
