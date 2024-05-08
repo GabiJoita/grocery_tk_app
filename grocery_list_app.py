@@ -40,6 +40,10 @@ def total_price():
 
 
 def prod_categories():
+    """ Create a dictionary with the elements
+        you want to put inside a data frame
+        to return the categories products
+    """
     categories = []
     for item in list_prod.get(0, tk.END):
         data = item.split()
@@ -70,6 +74,9 @@ def show_total_price():
 
 
 def show_categories():
+    """ show the grocery list items
+        by categories
+    """
     s_cat = prod_categories()
     price_cat = ''
     for cat in s_cat:
