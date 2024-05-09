@@ -1,4 +1,4 @@
-""" Use this app to add you favourite products on a grocery list"""
+""" Use this app to add your favourite products on a grocery list"""
 
 import tkinter as tk
 import csv
