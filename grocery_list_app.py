@@ -73,7 +73,7 @@ def show_total_price():
     index.set(s_tot)
 
 
-def show_categories():
+def categories_price():
     """ show the grocery list items
         by categories
     """
@@ -157,8 +157,8 @@ if __name__ == "__main__":
                                  command=show_total_price)
     total_button.grid(row=2, column=3)
 
-    categories_button = cst.CTkButton(root, text='show categories', corner_radius=32, width=15, height=30,
-                                      command=show_categories)
+    categories_button = cst.CTkButton(root, text='categories price', corner_radius=32, width=15, height=30,
+                                      command=categories_price)
     categories_button.grid(row=3, column=3)
 
     root.mainloop()
