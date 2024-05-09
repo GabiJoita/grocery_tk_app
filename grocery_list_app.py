@@ -66,9 +66,9 @@ def show_total_price():
     """
     s_tot = total_price()
     top = tk.Toplevel()
-    top.configure(bg='#857EFF')
-    top.geometry('200x100')
-    label = tk.Label(top, text='', textvariable=index, bg='#857EFF')
+    top.configure(bg='#436DC7')
+    top.geometry('200x100+700+350')
+    label = tk.Label(top, text='', textvariable=index, bg='#436DC7')
     label.pack()
     index.set(s_tot)
 
@@ -83,9 +83,9 @@ def show_categories():
         price_cat += f"{cat[0]}: {cat[1]['price'].sum()}\n"
         print(cat[1])
     top = tk.Toplevel()
-    top.configure(bg='#857EFF')
-    top.geometry('200x100')
-    label = tk.Label(top, text='', textvariable=index, bg='#857EFF')
+    top.configure(bg='#436DC7')
+    top.geometry('200x100+700+350')
+    label = tk.Label(top, text='', textvariable=index, bg='#436DC7')
     label.pack()
     index.set(price_cat)
 
@@ -113,7 +113,7 @@ def import_data():
 if __name__ == "__main__":
     root = tk.Tk()
     root.title('grocery list')
-    root.geometry('600x500')
+    root.geometry('600x500+800+200')
     root.config(background='#1B0A6B')
     index = tk.IntVar()
 
