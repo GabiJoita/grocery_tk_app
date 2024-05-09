@@ -6,7 +6,6 @@ import pandas as pd
 import customtkinter as cst
 from customtkinter import *
 from tkinter import messagebox
-from tkinter import Image
 from list_data import MyDbList
 
 
