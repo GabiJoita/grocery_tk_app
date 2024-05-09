@@ -24,4 +24,4 @@ from list_data import MyDbList
 ```
 
 Preview:
-![text if image cannot be loaded](image.jpg)
+![text if image cannot be loaded](./images/image.jpg)

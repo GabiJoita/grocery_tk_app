@@ -115,7 +115,7 @@ if __name__ == "__main__":
     root = tk.Tk()
     root.title('grocery list')
     root.geometry('600x500+800+200')
-    root.iconbitmap('logo.ico')
+    root.iconbitmap('./images/logo.ico')
     root.config(background='#1B0A6B')
     index = tk.IntVar()
 
